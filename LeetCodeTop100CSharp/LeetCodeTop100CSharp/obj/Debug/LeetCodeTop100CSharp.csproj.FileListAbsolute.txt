@@ -1,6 +1,0 @@
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\bin\Debug\LeetCodeTop100CSharp.exe.config
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\bin\Debug\LeetCodeTop100CSharp.exe
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\bin\Debug\LeetCodeTop100CSharp.pdb
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\obj\Debug\LeetCodeTop100CSharp.csproj.CoreCompileInputs.cache
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\obj\Debug\LeetCodeTop100CSharp.exe
-F:\GitClone\LeetCodeTop100\LeetCodeTop100CSharp\LeetCodeTop100CSharp\obj\Debug\LeetCodeTop100CSharp.pdb
