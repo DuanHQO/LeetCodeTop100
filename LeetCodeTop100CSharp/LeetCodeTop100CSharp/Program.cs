@@ -1,38 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LeetCodeTop100CSharp {
     class Program {
         static void Main(string[] args) {
 
-            var node1 = new ListNode(9);
-            var node2 = new ListNode(1);
-            var node3 = new ListNode(9);
-            //node1.next = node2;
-            //node2.next = node3;
-
-            var node4 = new ListNode(9);
-            var node5 = new ListNode(9);
-            var node6 = new ListNode(9);
-            var node7 = new ListNode(9);
-            var node8 = new ListNode(9);
-            var node9 = new ListNode(9);
-            var node10 = new ListNode(9);
-            var node11 = new ListNode(9);
-            node2.next = node3;
-            node3.next = node4;
-            node4.next = node5;
-            node5.next = node6;
-            node6.next = node7;
-            node7.next = node8;
-            node8.next = node9;
-            node9.next = node10;
-            node10.next = node11;
-
-            var cur = _2_AddTwoNumbers.AddTwoNumbers(node1, node2);
-            while (cur != null) {
-                Console.WriteLine("{0} -> ", cur.val);
-                cur = cur.next;
+            var test = new int?[] { 0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8};
+            var nodes = new TreeNode[test.Length];
+            for (int i = 0; i < test.Length; i++) {
+                if(test[i] != null) {
+                    nodes[i] = new TreeNode(test[i].Value);
+                }
             }
+
+            var slow = 0;
+            var fast = 1;
+
+            while (fast < nodes.Length && fast + 1 < nodes.Length) {
+                if (nodes[slow] != null) {
+                    nodes[slow].left = nodes[fast];
+                    nodes[slow].right = nodes[fast + 1];
+                    //Console.WriteLine("node[{0}] left:{1} right:{2}", test[slow], test[fast], test[fast+1]);
+                    fast += 2;
+                }
+                slow++;
+            }
+
+            
+            foreach (var item in nodes) {
+                if (item != null) {
+                    //Console.WriteLine(item.val);
+                }
+            }
+            Console.WriteLine(_104_MaximumDepthofBinaryTree.MaxDepth(nodes[0])); 
 
             Console.Read();
         }

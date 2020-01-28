@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="104_MaximumDepthofBinaryTree.cs" />
+    <Compile Include="206_ReverseLinkedList.cs" />
     <Compile Include="226_InvertBinaryTree.cs" />
     <Compile Include="2_AddTwoNumbers.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
