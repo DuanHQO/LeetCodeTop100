@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="2_AddTwoNumbers.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="461_HammingDistance.cs" />
+    <Compile Include="4_MedianofTwoSortedArrays.cs" />
+    <Compile Include="617_MergeTwoBinaryTrees.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidParentheses.cs" />
