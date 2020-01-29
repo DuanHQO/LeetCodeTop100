@@ -10,13 +10,14 @@ namespace LeetCodeTop100CSharp {
             if (head == null) return null;
 
             ListNode pre = null;
+            ListNode next = null;
             while (head!= null) {
-                var next = head.next;
+                next = head.next;
                 head.next = pre;
                 pre = head;
                 head = next;
             }
-            return head;
+            return pre;
         }
     }
 }
