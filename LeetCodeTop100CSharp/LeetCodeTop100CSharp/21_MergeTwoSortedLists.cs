@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCodeTop100CSharp {
+﻿namespace LeetCodeTop100CSharp {
     class _21_MergeTwoSortedLists {
         public ListNode MergeTwoLists(ListNode l1, ListNode l2) {
             if(l1 == null) {

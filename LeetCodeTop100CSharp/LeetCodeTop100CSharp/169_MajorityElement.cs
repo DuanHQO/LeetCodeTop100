@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCodeTop100CSharp {
+﻿namespace LeetCodeTop100CSharp {
     class _169_MajorityElement {
         public int MajorityElement(int[] nums) {
             var count = 0;
