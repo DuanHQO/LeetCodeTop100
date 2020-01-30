@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="101_SymmetricTree.cs" />
     <Compile Include="104_MaximumDepthofBinaryTree.cs" />
     <Compile Include="126_SingleNumber.cs" />
     <Compile Include="169_MajorityElement.cs" />
