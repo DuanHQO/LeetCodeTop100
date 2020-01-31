@@ -2,12 +2,6 @@ package algirithm
 
 import "leetcodetop100/kit"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func convertBST(root *kit.TreeNode) *kit.TreeNode {
 	sum := 0
 	root = convert(root, &sum)
