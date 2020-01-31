@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 type ListNode struct {
 	Val  int

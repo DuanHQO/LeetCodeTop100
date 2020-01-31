@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func hasCycle(head *ListNode) bool {
 	if head == nil {

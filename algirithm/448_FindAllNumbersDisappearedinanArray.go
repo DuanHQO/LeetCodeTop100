@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func findDisappearedNumbers(nums []int) []int {
 	var slice []int

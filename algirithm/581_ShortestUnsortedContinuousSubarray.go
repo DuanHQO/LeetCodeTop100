@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func findUnsortedSubarray(nums []int) int {
 	n := len(nums)

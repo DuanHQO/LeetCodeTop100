@@ -1,4 +1,6 @@
-package main
+package algirithm
+
+import "leetcodetop100/kit"
 
 func maxSubArray(nums []int) int {
 	if len(nums) <= 1 {
@@ -7,8 +9,8 @@ func maxSubArray(nums []int) int {
 
 	sum, maxSum := -1<<31, -1<<31
 	for _, value := range nums {
-		sum = max(sum+value, value)
-		maxSum = max(maxSum, sum)
+		sum = kit.Max(sum+value, value)
+		maxSum = kit.Max(maxSum, sum)
 	}
 
 	return maxSum

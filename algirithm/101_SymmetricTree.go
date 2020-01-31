@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func isSymmetric(root *TreeNode) bool {
 	if root == nil {

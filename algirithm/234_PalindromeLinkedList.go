@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 import "leetcodetop100/kit"
 

@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func countBits(num int) []int {
 	result := make([]int, num+1)

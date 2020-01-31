@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 type TreeNode struct {
 	Val   int

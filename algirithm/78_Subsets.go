@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func subsets(nums []int) [][]int {
 	if nums == nil {

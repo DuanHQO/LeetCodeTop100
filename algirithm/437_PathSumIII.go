@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func pathSum(root *TreeNode, sum int) int {
 	if root == nil {

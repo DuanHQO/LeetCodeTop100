@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func maxProfit(prices []int) int {
 	if len(prices) <= 1 {

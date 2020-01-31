@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 import (
 	_ "go/types"

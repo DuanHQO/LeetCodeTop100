@@ -12,7 +12,6 @@ func QuickSort(nums []int, start, end int) {
 
 func partition(nums []int, start int, end int) (result int) {
 	i := start
-	j := end + 1
 	cValue := nums[start]
 
 	for j := i + 1; j < end; j++ {

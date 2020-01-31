@@ -1,4 +1,4 @@
-package main
+package algirithm
 
 func ClimbStairs(n int) int {
 	if n <= 2 {
