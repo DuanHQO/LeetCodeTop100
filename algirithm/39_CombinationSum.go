@@ -23,23 +23,24 @@ func CombinationSum(candidates []int, target int) [][]int {
 }
 
 func dfs39(candidates []int, left int, start int, result *[][]int, pre []int) {
-	temp := make([]int, len(pre))
-	for i, v := range pre {
-		temp[i] = v
-	}
+
 	if left < 0 {
 		return
 	}
 
 	if left == 0 {
+		temp := make([]int, len(pre))
+		for i, v := range pre {
+			temp[i] = v
+		}
 		*result = append(*result, temp)
 		return
 	}
 
 	for i := start; i < len(candidates) && left-candidates[i] >= 0; i++ {
-		temp = append(temp, candidates[i])
-		dfs39(candidates, left-candidates[i], i, result, temp)
-		temp = temp[:len(temp)-1]
+		pre = append(pre, candidates[i])
+		dfs39(candidates, left-candidates[i], i, result, pre)
+		pre = pre[:len(pre)-1]
 	}
 
 }
