@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(algirithm.GenerateParenthesis(3))
+	fmt.Printf("%v\n", algirithm.CombinationSum([]int{2, 3, 5}, 8))
 }
