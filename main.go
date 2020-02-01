@@ -6,10 +6,11 @@ import (
 )
 
 func main() {
-	grid := [][]int{
-		{1, 2, 5},
-		{3, 2, 1},
-	}
-	fmt.Printf("%d", len(grid[0]))
-	fmt.Printf("%v\n", algirithm.MinPathSum(grid))
+	node := algirithm.ConstructorA()
+	node.Insert("apple")
+	fmt.Println(node.Search("apple"))
+	fmt.Println(node.Search("app"))
+	fmt.Println(node.StartsWith("app"))
+	node.Insert("app")
+	fmt.Println(node.Search("app"))
 }
