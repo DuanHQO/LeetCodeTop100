@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("%v\n", algirithm.CombinationSum([]int{2, 3, 5}, 8))
+	fmt.Printf("%v\n", algirithm.NumTrees(3))
 }
