@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>LeetCodeTop100CSharp._406_QueueReconstructionbyHeight</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +56,7 @@
     <Compile Include="283_MoveZeroes.cs" />
     <Compile Include="2_AddTwoNumbers.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="406_QueueReconstructionbyHeight.cs" />
     <Compile Include="461_HammingDistance.cs" />
     <Compile Include="4_MedianofTwoSortedArrays.cs" />
     <Compile Include="617_MergeTwoBinaryTrees.cs" />
