@@ -1,6 +1,8 @@
 package algirithm
 
-func hasCycle(head *ListNode) bool {
+import "leetcodetop100/kit"
+
+func hasCycle(head *kit.ListNode) bool {
 	if head == nil {
 		return false
 	}

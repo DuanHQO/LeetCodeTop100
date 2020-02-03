@@ -1,6 +1,8 @@
 package algirithm
 
-func getIntersectionNode(headA, headB *ListNode) *ListNode {
+import "leetcodetop100/kit"
+
+func getIntersectionNode(headA, headB *kit.ListNode) *kit.ListNode {
 	if headA == nil || headB == nil {
 		return nil
 	}

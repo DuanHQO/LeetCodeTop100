@@ -2,7 +2,7 @@ package algirithm
 
 import "leetcodetop100/kit"
 
-func isPalindrome(head *ListNode) bool {
+func isPalindrome(head *kit.ListNode) bool {
 
 	pre := head
 
