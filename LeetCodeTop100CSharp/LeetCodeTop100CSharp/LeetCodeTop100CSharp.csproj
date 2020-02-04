@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="101_SymmetricTree.cs" />
+    <Compile Include="102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="104_MaximumDepthofBinaryTree.cs" />
+    <Compile Include="11_ContainerWithMostWater.cs" />
     <Compile Include="126_SingleNumber.cs" />
     <Compile Include="169_MajorityElement.cs" />
     <Compile Include="206_ReverseLinkedList.cs" />
@@ -58,8 +60,10 @@
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="406_QueueReconstructionbyHeight.cs" />
     <Compile Include="461_HammingDistance.cs" />
+    <Compile Include="49_GroupAnagrams.cs" />
     <Compile Include="4_MedianofTwoSortedArrays.cs" />
     <Compile Include="617_MergeTwoBinaryTrees.cs" />
+    <Compile Include="647_PalindromicSubstrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidParentheses.cs" />
