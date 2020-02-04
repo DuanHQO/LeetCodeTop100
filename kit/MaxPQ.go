@@ -5,12 +5,18 @@ type MaxPQ struct {
 	N    int
 }
 
-func (this *MaxPQ) NewMaxPQ() *MaxPQ {
+func NewMaxPQ() *MaxPQ {
 	//不使用切片的第一个位置
 	return &MaxPQ{
 		item: []int{-1},
 		N:    0,
 	}
+}
+
+func NewMaxPQWithData(data []int) *MaxPQ {
+	tmp := NewMaxPQ()
+	tmp.item = append(tmp.item, data...)
+	return tmp
 }
 
 func (this *MaxPQ) IsEmpty() bool {
@@ -36,10 +42,10 @@ func (this *MaxPQ) swim(k int) {
 }
 
 //数值较小的往下沉
-func (this *MaxPQ) skin(k int) {
-	for 2*k <= this.N {
+func (this *MaxPQ) skin(k int, n int) {
+	for 2*k <= n {
 		j := 2 * k
-		if j < this.N && this.less(j, j+1) {
+		if j < n && this.less(j, j+1) {
 			j++
 		}
 		if this.less(k, j) {
@@ -63,13 +69,18 @@ func (this *MaxPQ) DeleteMax() int {
 	val := this.item[1]
 	this.exch(1, this.N)
 	this.item = this.item[:len(this.item)-1]
-	this.skin(1)
+	this.skin(1, this.N)
 	return val
 }
 
-func (this *MaxPQ) sort(nums []int) {
-	n := len(nums)
+func (this *MaxPQ) sort() {
+	n := this.N
 	for i := n / 2; i >= 1; i-- {
-
+		this.skin(i, n)
+	}
+	for n > 1 {
+		this.exch(1, n)
+		n--
+		this.skin(1, n)
 	}
 }
