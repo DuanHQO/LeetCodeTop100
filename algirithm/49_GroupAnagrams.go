@@ -5,9 +5,9 @@ func groupAnagrams(strs []string) [][]string {
 		return nil
 	}
 
-
 	for i := 0; i < len(strs); i++ {
 
-
 	}
+
+	return nil
 }

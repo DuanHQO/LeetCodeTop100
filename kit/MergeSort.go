@@ -1,25 +1,25 @@
 package kit
 
-func MergeSort(arr []int) []int {
-	//if hi <= lo {
-	//	return
-	//}
-	//
-	//mid := lo + (hi - lo) >> 2
-	//MergeSort(arr, lo, mid)
-	//MergeSort(arr, mid+ 1, hi)
-	//
-	//merge(arr, lo, mid, hi)
-
-	if len(arr) < 2 {
-		return arr
+func MergeSort(arr []int, lo, hi int) {
+	if hi <= lo {
+		return
 	}
-	i := len(arr) / 2
-	left := MergeSort(arr[0:i])
-	right := MergeSort(arr[i:])
 
-	result := merge(left, right)
-	return result
+	mid := lo + (hi-lo)/2
+	MergeSort(arr, lo, mid)
+	MergeSort(arr, mid+1, hi)
+
+	mergeB(arr, lo, mid, hi)
+
+	//if len(arr) < 2 {
+	//	return arr
+	//}
+	//i := len(arr) / 2
+	//left := MergeSort(arr[0:i])
+	//right := MergeSort(arr[i:])
+	//
+	//result := merge(left, right)
+	//return result
 }
 
 func merge(left []int, right []int) (result []int) {
@@ -47,7 +47,7 @@ func merge(left []int, right []int) (result []int) {
 func mergeB(arr []int, lo, mid, hi int) {
 	var temp []int
 	m, n := 0, 0
-	if mid > lo && hi > mid && arr[mid] > arr[mid+1] {
+	if mid >= lo && hi > mid && arr[mid] > arr[mid+1] {
 		for lo+m < mid+1 && mid+1+n < hi+1 {
 			if arr[lo+m] < arr[mid+1+n] {
 				temp = append(temp, arr[lo+m])
@@ -60,6 +60,10 @@ func mergeB(arr []int, lo, mid, hi int) {
 	}
 	temp = append(temp, arr[lo+m:mid+1]...)
 	temp = append(temp, arr[mid+1+n:hi+1]...)
+	left := arr[:lo]
+	right := arr[hi+1:]
+	arr = append(append(left, temp...), right...)
+
 }
 
 func mergeA(left, right []int) (result []int) {
