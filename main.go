@@ -3,5 +3,5 @@ package main
 import "leetcodetop100/algirithm"
 
 func main() {
-	algirithm.SortColors([]int{2, 0, 2, 1, 1, 0})
+	algirithm.MaxProfitIII([]int{3, 3, 5, 0, 0, 3, 1, 4})
 }

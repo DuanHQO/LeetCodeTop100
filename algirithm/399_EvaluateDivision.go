@@ -1,9 +1,5 @@
 package algirithm
 
-import (
-	"leetcodetop100/kit"
-)
-
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
 	m := make(map[string]map[string]float64)
 
@@ -73,22 +69,4 @@ func bfs(m map[string]map[string]float64, a string, b string) float64 {
 	}
 
 	return -1
-}
-
-func calcEquationA(equations [][]int, values []float64, queries [][]int) []float64 {
-	dic := make(map[int]int)
-
-	for _, equation := range equations {
-		_, exist := dic[equation[0]]
-		if !exist {
-			dic[equation[0]] = 1
-		}
-	}
-
-	digraph := kit.NewEdgeWeightedDigraph(len(dic))
-	for i, equation := range equations {
-		edge := kit.NewDirectedEdge(equation[0], equation[1], values[i])
-		digraph.AddEdge(edge)
-	}
-
 }
