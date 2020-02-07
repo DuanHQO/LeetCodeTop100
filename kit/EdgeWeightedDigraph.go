@@ -29,3 +29,7 @@ func (this *EdgeWeightedDigraph) Edges() []DirectedEdge {
 	}
 	return bag
 }
+
+func (this *EdgeWeightedDigraph) HasCycle() bool {
+	return false
+}
