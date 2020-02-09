@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp._406_QueueReconstructionbyHeight</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp._394_DecodeString</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,14 +50,15 @@
     <Compile Include="102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="104_MaximumDepthofBinaryTree.cs" />
     <Compile Include="11_ContainerWithMostWater.cs" />
-    <Compile Include="123_BestTimetoBuyandSellStockIII.cs" />
     <Compile Include="126_SingleNumber.cs" />
+    <Compile Include="142_LinkedListCycleII.cs" />
     <Compile Include="169_MajorityElement.cs" />
     <Compile Include="206_ReverseLinkedList.cs" />
     <Compile Include="21_MergeTwoSortedLists.cs" />
     <Compile Include="226_InvertBinaryTree.cs" />
     <Compile Include="283_MoveZeroes.cs" />
     <Compile Include="2_AddTwoNumbers.cs" />
+    <Compile Include="394_DecodeString.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="406_QueueReconstructionbyHeight.cs" />
     <Compile Include="461_HammingDistance.cs" />
