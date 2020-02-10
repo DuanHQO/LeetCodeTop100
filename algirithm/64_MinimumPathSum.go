@@ -11,10 +11,8 @@ func MinPathSum(grid [][]int) int {
 				grid[y][x] = grid[y][x]
 			} else if x != 0 && y != 0 {
 				grid[y][x] = kit.Min(grid[y-1][x], grid[y][x-1]) + grid[y][x]
-			} else if x == 0 {
+			} else if x == 0 || y == 0 {
 				grid[y][x] = grid[y-1][x] + grid[y][x]
-			} else if y == 0 {
-				grid[y][x] = grid[y][x-1] + grid[y][x]
 			}
 		}
 	}
