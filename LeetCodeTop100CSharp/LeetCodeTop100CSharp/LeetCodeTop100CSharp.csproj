@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp._394_DecodeString</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp._439_FindAllAnagramsinaString</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -62,6 +62,7 @@
     <Compile Include="394_DecodeString.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="406_QueueReconstructionbyHeight.cs" />
+    <Compile Include="439_FindAllAnagramsinaString.cs" />
     <Compile Include="461_HammingDistance.cs" />
     <Compile Include="49_GroupAnagrams.cs" />
     <Compile Include="4_MedianofTwoSortedArrays.cs" />

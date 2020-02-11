@@ -8,5 +8,6 @@ func main() {
 	//algirithm.NumIslands([][]byte{{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}})
 	//algirithm.NumIslands([][]byte{{'1', '1', '1'}, {'0', '1', '0'}, {'1', '1', '1'}})
 	//algirithm.SubarraySum([]int{1, 1, 1}, 2)
-	algirithm.FindTargetSumWays([]int{7, 46, 36, 49, 5, 34, 25, 39, 41, 38, 49, 47, 17, 11, 1, 41, 7, 16, 23, 13}, 3)
+	//algirithm.FindTargetSumWays([]int{7, 46, 36, 49, 5, 34, 25, 39, 41, 38, 49, 47, 17, 11, 1, 41, 7, 16, 23, 13}, 3)
+	algirithm.MinWindow("ADOBECODEBANC", "ABC")
 }
