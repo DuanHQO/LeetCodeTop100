@@ -13,5 +13,8 @@ func main() {
 	//algirithm.Exist([][]byte{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}}, "ABCCED")
 	//algirithm.Exist([][]byte{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}}, "SEE")
 	//algirithm.Exist([][]byte{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}}, "ABCB")
-	algirithm.Exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'E', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCESEEEFS")
+	//algirithm.Exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'E', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCESEEEFS")
+	//algirithm.SearchRange([]int{5,7,7,8,8,10}, 8)
+	algirithm.SearchRange([]int{5, 7, 7, 8, 8, 10}, 6)
+	algirithm.SearchRange([]int{1}, 1)
 }
