@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp._439_FindAllAnagramsinaString</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp._56_MergeIntervals</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +66,7 @@
     <Compile Include="461_HammingDistance.cs" />
     <Compile Include="49_GroupAnagrams.cs" />
     <Compile Include="4_MedianofTwoSortedArrays.cs" />
+    <Compile Include="56_MergeIntervals.cs" />
     <Compile Include="617_MergeTwoBinaryTrees.cs" />
     <Compile Include="647_PalindromicSubstrings.cs" />
     <Compile Include="Program.cs" />
