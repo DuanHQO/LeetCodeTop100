@@ -1,12 +1,12 @@
 package algirithm
 
-var marked []bool
+var markedCanFinish []bool
 var onStack []bool
 var adj [][]int
 var hasCycleCanFinish bool
 
 func CanFinish(numCourses int, prerequisites [][]int) bool {
-	marked = make([]bool, numCourses)
+	markedCanFinish = make([]bool, numCourses)
 	onStack = make([]bool, numCourses)
 	adj = make([][]int, numCourses)
 	hasCycleCanFinish = false
@@ -18,7 +18,7 @@ func CanFinish(numCourses int, prerequisites [][]int) bool {
 	}
 
 	for v := 0; v < numCourses; v++ {
-		if !marked[v] {
+		if !markedCanFinish[v] {
 			dfsCanFinish(v)
 		}
 	}
@@ -31,10 +31,10 @@ func CanFinish(numCourses int, prerequisites [][]int) bool {
 }
 
 func dfsCanFinish(v int) {
-	marked[v] = true
+	markedCanFinish[v] = true
 	onStack[v] = true
 	for _, w := range adj[v] {
-		if !marked[w] {
+		if !markedCanFinish[w] {
 			dfsCanFinish(w)
 		} else if onStack[w] {
 			hasCycleCanFinish = true
