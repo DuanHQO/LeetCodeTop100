@@ -67,8 +67,10 @@
     <Compile Include="49_GroupAnagrams.cs" />
     <Compile Include="4_MedianofTwoSortedArrays.cs" />
     <Compile Include="56_MergeIntervals.cs" />
+    <Compile Include="5_LongestPalindromicSubstring.cs" />
     <Compile Include="617_MergeTwoBinaryTrees.cs" />
     <Compile Include="647_PalindromicSubstrings.cs" />
+    <Compile Include="98_ValidateBinarySearchTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidParentheses.cs" />
