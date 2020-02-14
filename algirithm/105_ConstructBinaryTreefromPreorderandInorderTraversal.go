@@ -1,9 +1,5 @@
 package algirithm
 
-var dic map[int]int
-var thisPre []int
-var rootIndex int
-
 func buildTree(preorder []int, inorder []int) *TreeNode {
 	if preorder == nil || inorder == nil {
 		return nil
@@ -12,29 +8,31 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 		return nil
 	}
 
-	rootIndex = 0
-	dic = make(map[int]int)
+	dic := make(map[int]int)
+	rootIndex := 0
+
 	for i, v := range inorder {
 		dic[v] = i
 	}
 
-	thisPre = preorder
-	root := helperBuildTree(0, len(inorder))
+	var helper func(int, int) *TreeNode
+	helper = func(inLeft int, inRight int) *TreeNode {
+		if inLeft == inRight {
+			return nil
+		}
 
-	return root
-}
+		val := preorder[rootIndex]
+		root := &TreeNode{Val: val}
+		mid := dic[val]
+		rootIndex++
 
-func helperBuildTree(inLeft int, inRight int) *TreeNode {
-	if inLeft == inRight {
-		return nil
+		root.Left = helper(inLeft, mid)
+		root.Right = helper(mid+1, inRight)
+
+		return root
 	}
 
-	val := thisPre[rootIndex]
-	root := &TreeNode{Val: val}
-	mid := dic[val]
-	rootIndex++
+	root := helper(0, len(inorder))
 
-	root.Left = helperBuildTree(inLeft, mid)
-	root.Right = helperBuildTree(mid+1, inRight)
 	return root
 }
