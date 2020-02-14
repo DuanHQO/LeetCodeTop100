@@ -5,20 +5,21 @@ func subsets(nums []int) [][]int {
 		return nil
 	}
 
-	var result [][]int
+	var res [][]int
 
-	n := len(nums)
-
-	for i := 0; i <= n; i++ {
-		for j := 0; j+i <= n; j++ {
-
-			result = append(result)
+	var backTrack func(int, []int)
+	backTrack = func(i int, tmp []int) {
+		slice := make([]int, len(tmp), len(tmp))
+		copy(slice, tmp)
+		res = append(res, slice)
+		for j := i; j < len(nums); j++ {
+			tmp = append(tmp, nums[j])
+			backTrack(j+1, tmp)
+			tmp = tmp[:len(tmp)-1]
 		}
 	}
 
-	return result
-}
+	backTrack(0, []int{})
 
-func enumSubsets(nums []int, com int) {
-
+	return res
 }
