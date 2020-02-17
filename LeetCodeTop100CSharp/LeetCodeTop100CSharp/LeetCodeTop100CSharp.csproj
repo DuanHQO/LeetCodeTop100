@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp._56_MergeIntervals</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp._18_4Sum</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,6 +54,7 @@
     <Compile Include="139_WordBreak.cs" />
     <Compile Include="142_LinkedListCycleII.cs" />
     <Compile Include="169_MajorityElement.cs" />
+    <Compile Include="18_4Sum.cs" />
     <Compile Include="206_ReverseLinkedList.cs" />
     <Compile Include="21_MergeTwoSortedLists.cs" />
     <Compile Include="226_InvertBinaryTree.cs" />
