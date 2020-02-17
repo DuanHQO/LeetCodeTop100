@@ -62,6 +62,7 @@
     <Compile Include="27_RemoveElement.cs" />
     <Compile Include="283_MoveZeroes.cs" />
     <Compile Include="2_AddTwoNumbers.cs" />
+    <Compile Include="35_SearchInsertPosition.cs" />
     <Compile Include="394_DecodeString.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="406_QueueReconstructionbyHeight.cs" />
