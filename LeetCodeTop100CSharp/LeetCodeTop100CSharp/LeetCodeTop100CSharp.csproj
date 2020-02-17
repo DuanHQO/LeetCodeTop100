@@ -58,6 +58,7 @@
     <Compile Include="206_ReverseLinkedList.cs" />
     <Compile Include="21_MergeTwoSortedLists.cs" />
     <Compile Include="226_InvertBinaryTree.cs" />
+    <Compile Include="26_RemoveDuplicatesfromSortedArray.cs" />
     <Compile Include="283_MoveZeroes.cs" />
     <Compile Include="2_AddTwoNumbers.cs" />
     <Compile Include="394_DecodeString.cs" />
