@@ -16,8 +16,8 @@ func levelOrder(root *TreeNode) [][]int {
 
 		res[level] = append(res[level], root.Val)
 
-		dfs(root.Left, level + 1)
-		dfs(root.Right, level + 1)
+		dfs(root.Left, level+1)
+		dfs(root.Right, level+1)
 
 	}
 
