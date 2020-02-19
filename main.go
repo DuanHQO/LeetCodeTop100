@@ -10,5 +10,9 @@ func main() {
 	//fmt.Println(algirithm.Search([]int{3, 1}, 1))
 	//algirithm.SubsetsWithDup([]int{1, 2, 2})
 	//algirithm.ThreeSumClosest([]int{-1,2,1,-4}, 1)
-	algirithm.ThreeSumClosest([]int{1, 1, 1, 0}, -100)
+	//algirithm.ThreeSumClosest([]int{1, 1, 1, 0}, -100)
+	algirithm.SpiralOrder([][]int{
+		{1, 2, 3, 4},
+		{5, 6, 7, 8},
+		{9, 10, 11, 12}})
 }
