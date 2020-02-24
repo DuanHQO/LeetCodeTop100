@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,41 +61,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="101_SymmetricTree.cs" />
-    <Compile Include="102_BinaryTreeLevelOrderTraversal.cs" />
-    <Compile Include="104_MaximumDepthofBinaryTree.cs" />
-    <Compile Include="11_ContainerWithMostWater.cs" />
-    <Compile Include="126_SingleNumber.cs" />
-    <Compile Include="139_WordBreak.cs" />
-    <Compile Include="142_LinkedListCycleII.cs" />
-    <Compile Include="169_MajorityElement.cs" />
-    <Compile Include="18_4Sum.cs" />
-    <Compile Include="206_ReverseLinkedList.cs" />
-    <Compile Include="21_MergeTwoSortedLists.cs" />
-    <Compile Include="226_InvertBinaryTree.cs" />
-    <Compile Include="26_RemoveDuplicatesfromSortedArray.cs" />
-    <Compile Include="27_RemoveElement.cs" />
-    <Compile Include="283_MoveZeroes.cs" />
-    <Compile Include="2_AddTwoNumbers.cs" />
-    <Compile Include="35_SearchInsertPosition.cs" />
-    <Compile Include="394_DecodeString.cs" />
-    <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
-    <Compile Include="406_QueueReconstructionbyHeight.cs" />
-    <Compile Include="439_FindAllAnagramsinaString.cs" />
-    <Compile Include="461_HammingDistance.cs" />
-    <Compile Include="49_GroupAnagrams.cs" />
-    <Compile Include="4_MedianofTwoSortedArrays.cs" />
-    <Compile Include="56_MergeIntervals.cs" />
-    <Compile Include="5_LongestPalindromicSubstring.cs" />
-    <Compile Include="617_MergeTwoBinaryTrees.cs" />
-    <Compile Include="647_PalindromicSubstrings.cs" />
-    <Compile Include="98_ValidateBinarySearchTree.cs" />
+    <Compile Include="0002_AddTwoNumbers.cs" />
+    <Compile Include="0003_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="0005_LongestPalindromicSubstring.cs" />
+    <Compile Include="0011_ContainerWithMostWater.cs" />
+    <Compile Include="0018_4Sum.cs" />
+    <Compile Include="0021_MergeTwoSortedLists.cs" />
+    <Compile Include="0026_RemoveDuplicatesfromSortedArray.cs" />
+    <Compile Include="0027_RemoveElement.cs" />
+    <Compile Include="0035_SearchInsertPosition.cs" />
+    <Compile Include="0049_GroupAnagrams.cs" />
+    <Compile Include="0056_MergeIntervals.cs" />
+    <Compile Include="0098_ValidateBinarySearchTree.cs" />
+    <Compile Include="0101_SymmetricTree.cs" />
+    <Compile Include="0102_BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="0103_BinaryTreeZigzagLevelOrderTraversal.cs" />
+    <Compile Include="0104_MaximumDepthofBinaryTree.cs" />
+    <Compile Include="0126_SingleNumber.cs" />
+    <Compile Include="0139_WordBreak.cs" />
+    <Compile Include="0142_LinkedListCycleII.cs" />
+    <Compile Include="0169_MajorityElement.cs" />
+    <Compile Include="0206_ReverseLinkedList.cs" />
+    <Compile Include="0226_InvertBinaryTree.cs" />
+    <Compile Include="0283_MoveZeroes.cs" />
+    <Compile Include="0394_DecodeString.cs" />
+    <Compile Include="0406_QueueReconstructionbyHeight.cs" />
+    <Compile Include="0439_FindAllAnagramsinaString.cs" />
+    <Compile Include="0461_HammingDistance.cs" />
+    <Compile Include="0617_MergeTwoBinaryTrees.cs" />
+    <Compile Include="0647_PalindromicSubstrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidParentheses.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
