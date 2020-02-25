@@ -79,6 +79,7 @@
     <Compile Include="0104_MaximumDepthofBinaryTree.cs" />
     <Compile Include="0107_BinaryTreeLevelOrderTraversalII.cs" />
     <Compile Include="0111_MinimumDepthofBinaryTree.cs" />
+    <Compile Include="0116_PopulatingNextRightPointersinEachNode.cs" />
     <Compile Include="0126_SingleNumber.cs" />
     <Compile Include="0139_WordBreak.cs" />
     <Compile Include="0142_LinkedListCycleII.cs" />
