@@ -82,6 +82,7 @@
     <Compile Include="0116_PopulatingNextRightPointersinEachNode.cs" />
     <Compile Include="0117_PopulatingNextRightPointersinEachNodeII.cs" />
     <Compile Include="0126_SingleNumber.cs" />
+    <Compile Include="0129_SumRoottoLeafNumbers.cs" />
     <Compile Include="0139_WordBreak.cs" />
     <Compile Include="0142_LinkedListCycleII.cs" />
     <Compile Include="0169_MajorityElement.cs" />
