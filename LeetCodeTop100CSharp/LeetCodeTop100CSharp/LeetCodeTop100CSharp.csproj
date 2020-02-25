@@ -97,6 +97,7 @@
     <Compile Include="0236_LowestCommonAncestorofaBinaryTree.cs" />
     <Compile Include="0283_MoveZeroes.cs" />
     <Compile Include="0394_DecodeString.cs" />
+    <Compile Include="0404_SumofLeftLeaves.cs" />
     <Compile Include="0406_QueueReconstructionbyHeight.cs" />
     <Compile Include="0439_FindAllAnagramsinaString.cs" />
     <Compile Include="0461_HammingDistance.cs" />
