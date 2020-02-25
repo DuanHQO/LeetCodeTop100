@@ -101,6 +101,7 @@
     <Compile Include="0406_QueueReconstructionbyHeight.cs" />
     <Compile Include="0439_FindAllAnagramsinaString.cs" />
     <Compile Include="0461_HammingDistance.cs" />
+    <Compile Include="0501_FindModeinBinarySearchTree.cs" />
     <Compile Include="0617_MergeTwoBinaryTrees.cs" />
     <Compile Include="0647_PalindromicSubstrings.cs" />
     <Compile Include="Program.cs" />
