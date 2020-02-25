@@ -93,6 +93,7 @@
     <Compile Include="0222_CountCompleteTreeNodes.cs" />
     <Compile Include="0226_InvertBinaryTree.cs" />
     <Compile Include="0230_KthSmallestElementinaBST.cs" />
+    <Compile Include="0235_LowestCommonAncestorofaBinarySearchTree.cs" />
     <Compile Include="0283_MoveZeroes.cs" />
     <Compile Include="0394_DecodeString.cs" />
     <Compile Include="0406_QueueReconstructionbyHeight.cs" />
