@@ -87,6 +87,7 @@
     <Compile Include="0142_LinkedListCycleII.cs" />
     <Compile Include="0144_BinaryTreePreorderTraversal.cs" />
     <Compile Include="0169_MajorityElement.cs" />
+    <Compile Include="0173_BinarySearchTreeIterator.cs" />
     <Compile Include="0206_ReverseLinkedList.cs" />
     <Compile Include="0226_InvertBinaryTree.cs" />
     <Compile Include="0283_MoveZeroes.cs" />
