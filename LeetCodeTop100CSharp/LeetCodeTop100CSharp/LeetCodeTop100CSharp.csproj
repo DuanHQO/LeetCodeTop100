@@ -70,6 +70,7 @@
     <Compile Include="0026_RemoveDuplicatesfromSortedArray.cs" />
     <Compile Include="0027_RemoveElement.cs" />
     <Compile Include="0035_SearchInsertPosition.cs" />
+    <Compile Include="0036_ValidSudoku.cs" />
     <Compile Include="0049_GroupAnagrams.cs" />
     <Compile Include="0056_MergeIntervals.cs" />
     <Compile Include="0098_ValidateBinarySearchTree.cs" />
