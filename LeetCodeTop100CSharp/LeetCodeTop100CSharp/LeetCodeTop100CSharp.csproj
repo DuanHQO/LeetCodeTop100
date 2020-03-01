@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp._0111_MinimumDepthofBinaryTree</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp.剑指Offer2._0015_二进制中1的个数</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -115,6 +115,7 @@
     <Compile Include="剑指Offer2\0006_从尾到头打印链表.cs" />
     <Compile Include="剑指Offer2\0024_反转链表.cs" />
     <Compile Include="剑指Offer2\0025_合并两个排序的链表.cs" />
+    <Compile Include="剑指Offer2\0032_从上到下打印二叉树 II.cs" />
     <Compile Include="剑指Offer2\0055_I二叉树的深度.cs" />
   </ItemGroup>
   <ItemGroup>
