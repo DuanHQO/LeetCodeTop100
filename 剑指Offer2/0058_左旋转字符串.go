@@ -1,4 +1,4 @@
-package algirithm
+package 剑指Offer2
 
 func reverseLeftWords(s string, n int) string {
 	if s == "" || n < 0 || n > len(s) {
