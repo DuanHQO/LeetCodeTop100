@@ -14,7 +14,7 @@ func twoSum(nums []int, target int) []int {
 		} else if nums[lo]+nums[hi] < target {
 			lo++
 		} else {
-			return []int{nums[i], nums[j]}
+			return []int{nums[lo], nums[hi]}
 		}
 	}
 
