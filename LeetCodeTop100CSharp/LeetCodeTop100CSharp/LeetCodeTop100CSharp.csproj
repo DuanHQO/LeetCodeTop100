@@ -112,6 +112,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidParentheses.cs" />
+    <Compile Include="剑指Offer2\0006_从尾到头打印链表.cs" />
     <Compile Include="剑指Offer2\0055_I二叉树的深度.cs" />
   </ItemGroup>
   <ItemGroup>
