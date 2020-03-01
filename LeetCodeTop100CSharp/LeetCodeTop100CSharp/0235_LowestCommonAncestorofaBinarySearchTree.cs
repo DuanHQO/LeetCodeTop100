@@ -11,7 +11,7 @@ namespace LeetCodeTop100CSharp {
             var qVal = q.val;
             var node = root;
             while (node != null) {
-                if(pVal < node.val && pVal < node.val) {
+                if(pVal < node.val && qVal < node.val) {
                     node = node.left;
                 }else if(pVal > node.val && qVal > node.val) {
                     node = node.right;
