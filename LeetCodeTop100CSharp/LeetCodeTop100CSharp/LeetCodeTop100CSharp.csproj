@@ -118,6 +118,7 @@
     <Compile Include="剑指Offer2\0032_从上到下打印二叉树 II.cs" />
     <Compile Include="剑指Offer2\0054_二叉搜索树的第k大节点.cs" />
     <Compile Include="剑指Offer2\0055_I二叉树的深度.cs" />
+    <Compile Include="剑指Offer2\0068_二叉树的最近公共祖先.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
