@@ -24,9 +24,11 @@ func maxSlidingWindow(nums []int, k int) []int {
 	for i := 0; i < len(nums)-k+1; i++ {
 		l := i
 		r := l + k - 1
+		//如果滑出去的是最大值，就在当前窗口内重新更新
 		if max == -1 || max == l-1 {
 			max = helper(l, r)
 		} else {
+			//如果滑出去的不是最大值，就跟新进来的比较
 			if nums[max] < nums[r] {
 				max = r
 			}
