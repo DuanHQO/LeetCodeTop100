@@ -12,7 +12,7 @@ func Search0053(nums []int, target int) int {
 	lo := 0
 	hi := len(nums) - 1
 
-	for lo < hi {
+	for lo <= hi {
 		mid := lo + (hi-lo)/2
 		fmt.Println(mid)
 		if nums[mid] < target {
