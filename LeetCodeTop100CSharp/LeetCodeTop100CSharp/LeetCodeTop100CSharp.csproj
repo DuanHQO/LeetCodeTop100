@@ -123,6 +123,7 @@
     <Compile Include="剑指Offer2\0058_翻转单词顺序.cs" />
     <Compile Include="剑指Offer2\0060_n个骰子的点数.cs" />
     <Compile Include="剑指Offer2\0068_二叉树的最近公共祖先.cs" />
+    <Compile Include="剑指Offer2\0994_RottingOranges.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
