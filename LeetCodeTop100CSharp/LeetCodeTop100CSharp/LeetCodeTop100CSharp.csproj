@@ -120,6 +120,7 @@
     <Compile Include="剑指Offer2\0052_两个链表的第一个公共节点.cs" />
     <Compile Include="剑指Offer2\0054_二叉搜索树的第k大节点.cs" />
     <Compile Include="剑指Offer2\0055_I二叉树的深度.cs" />
+    <Compile Include="剑指Offer2\0056_数组中数字出现的次数 II.cs" />
     <Compile Include="剑指Offer2\0058_翻转单词顺序.cs" />
     <Compile Include="剑指Offer2\0060_n个骰子的点数.cs" />
     <Compile Include="剑指Offer2\0068_二叉树的最近公共祖先.cs" />
