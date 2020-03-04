@@ -116,6 +116,7 @@
     <Compile Include="剑指Offer2\0024_反转链表.cs" />
     <Compile Include="剑指Offer2\0025_合并两个排序的链表.cs" />
     <Compile Include="剑指Offer2\0028_对称的二叉树.cs" />
+    <Compile Include="剑指Offer2\0031_栈的压入、弹出序列.cs" />
     <Compile Include="剑指Offer2\0032_从上到下打印二叉树 II.cs" />
     <Compile Include="剑指Offer2\0032_从上到下打印二叉树 III.cs" />
     <Compile Include="剑指Offer2\0032_从上到下打印二叉树.cs" />
