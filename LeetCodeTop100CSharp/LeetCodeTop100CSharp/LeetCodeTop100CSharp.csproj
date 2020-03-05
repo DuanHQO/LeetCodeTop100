@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LeetCodeTop100CSharp.剑指Offer2._0045_把数组排成最小的数</StartupObject>
+    <StartupObject>LeetCodeTop100CSharp.剑指Offer2._0058_翻转单词顺序</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -122,7 +122,6 @@
     <Compile Include="剑指Offer2\0032_从上到下打印二叉树.cs" />
     <Compile Include="剑指Offer2\0035_复杂链表的复制.cs" />
     <Compile Include="剑指Offer2\0036_二叉搜索树与双向链表.cs" />
-    <Compile Include="剑指Offer2\0045_把数组排成最小的数.cs" />
     <Compile Include="剑指Offer2\0052_两个链表的第一个公共节点.cs" />
     <Compile Include="剑指Offer2\0054_二叉搜索树的第k大节点.cs" />
     <Compile Include="剑指Offer2\0055_I二叉树的深度.cs" />
