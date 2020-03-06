@@ -23,12 +23,7 @@ func Permutation(s string) []string {
 			res = append(res, string(slice))
 			return
 		}
-		//for _, value := range start {
-		//	fmt.Printf("%c", value)
-		//}
-		//fmt.Println()
 
-		//marked := make([]bool, len(char))
 		for i := 0; i < len(s); i++ {
 			if i > 0 && s[i] == s[i-1] {
 				continue
