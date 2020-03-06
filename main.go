@@ -4,5 +4,5 @@ import "leetcodetop100/剑指Offer2"
 
 func main() {
 	//algirithm.NthUglyNumber(10)
-	剑指Offer2.Permutation("abc")
+	剑指Offer2.TranslateNum(12258)
 }
