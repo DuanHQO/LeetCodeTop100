@@ -1,4 +1,4 @@
-package 每日1题_3月
+package 每日1题3月
 
 func diameterOfBinaryTree(root *TreeNode) int {
 	if root == nil {

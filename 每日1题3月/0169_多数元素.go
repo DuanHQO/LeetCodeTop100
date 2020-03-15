@@ -1,4 +1,4 @@
-package 每日1题_3月
+package 每日1题3月
 
 func majorityElement(nums []int) int {
 	num := nums[0]

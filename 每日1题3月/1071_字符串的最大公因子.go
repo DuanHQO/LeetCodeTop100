@@ -1,4 +1,4 @@
-package 每日1题_3月
+package 每日1题3月
 
 func gcdOfStrings(str1 string, str2 string) string {
 	if str1+str2 != str2+str1 {

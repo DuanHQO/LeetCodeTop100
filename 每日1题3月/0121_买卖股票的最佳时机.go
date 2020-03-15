@@ -1,4 +1,4 @@
-package 每日1题_3月
+package 每日1题3月
 
 func maxProfit(prices []int) int {
 	if prices == nil || len(prices) == 0 {

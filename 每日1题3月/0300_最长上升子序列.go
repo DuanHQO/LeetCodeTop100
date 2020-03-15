@@ -1,4 +1,4 @@
-package 每日1题_3月
+package 每日1题3月
 
 func lengthOfLIS(nums []int) int {
 	if nums == nil || len(nums) == 0 {
