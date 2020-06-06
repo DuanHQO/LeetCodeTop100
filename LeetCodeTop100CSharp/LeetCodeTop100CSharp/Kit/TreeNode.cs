@@ -2,11 +2,13 @@
 
 namespace LeetCodeTop100CSharp {
     public class TreeNode<TKey, TValue> where TKey : IComparable<TKey> {
-        // public 
-        public int val;
-        public TreeNode<TKey, TValue> left;
-        public TreeNode<TKey, TValue> right;
-        public TreeNode(int x) { val = x; }
+        public TKey Key;
+        public TValue Value;
+        public TreeNode<TKey, TValue> Left;
+        public TreeNode<TKey, TValue> Right;
+        public TreeNode(TValue x) { Value = x; }
+        
+        // public bool isRed()
     }
     
     public class TreeNode {
