@@ -5,27 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCodeTop100CSharp {
-    class _0116_PopulatingNextRightPointersinEachNode {
-        public Node Connect(Node root) {
+    class _0116_PopulatingNextRightPointersinEachListNode {
+        public ListNode Connect(ListNode root) {
             if (root == null) {
                 return null;
             }
 
-            var queue = new Queue<Node>();
+            var queue = new Queue<ListNode>();
             queue.Enqueue(root);
             while (queue.Count > 0) {
                 var len = queue.Count;
                 while (len > 0) {
-                    var node = queue.Dequeue();
+                    var ListNode = queue.Dequeue();
                     if(len > 1) {
                         var next = queue.Peek();
-                        node.next = next;
+                        ListNode.next = next;
                     }
-                    if (node.left != null) {
-                        queue.Enqueue(node.left);
+                    if (ListNode.left != null) {
+                        queue.Enqueue(ListNode.left);
                     }
-                    if (node.right != null) {
-                        queue.Enqueue(node.right);
+                    if (ListNode.right != null) {
+                        queue.Enqueue(ListNode.right);
                     }
                     len--;
                 }

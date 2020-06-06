@@ -61,6 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kit\ListNode.cs" />
+    <Compile Include="Kit\RedBlackBST.cs" />
+    <Compile Include="Kit\TreeNode.cs" />
     <Compile Include="Tencent\0394_字符串解码.cs" />
     <Compile Include="Top100\0002_AddTwoNumbers.cs" />
     <Compile Include="Top100\0003_LongestSubstringWithoutRepeatingCharacters.cs" />

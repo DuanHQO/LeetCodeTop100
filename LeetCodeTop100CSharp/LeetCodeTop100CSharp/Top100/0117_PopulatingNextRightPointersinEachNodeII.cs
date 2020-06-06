@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LeetCodeTop100CSharp {
     class _0117_PopulatingNextRightPointersinEachNodeII {
-        public Node Connect(Node root) {
+        public ListNode Connect(ListNode root) {
             if (root == null) {
                 return null;
             }
 
-            var queue = new Queue<Node>();
+            var queue = new Queue<ListNode>();
             queue.Enqueue(root);
             while (queue.Count > 0) {
                 var len = queue.Count;

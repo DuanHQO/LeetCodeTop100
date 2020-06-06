@@ -1,7 +1,13 @@
+github.com/chai2010/errors v0.0.0-20200331144644-9552b8eca95b h1:DSStEaCuFg71jh49AeYTNWdR/Zv7069/vMXIXNKZ2zA=
+github.com/chai2010/errors v0.0.0-20200331144644-9552b8eca95b/go.mod h1:wjFXr0DgwZCfXrW1fjFyR8BMmJnGT8xnU02gc+H7hpk=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/nosixtools/timewheel v1.3.0 h1:co/JU6T7Hm+zFhY5v/fJnQZ5mqzI6BTxKXP1dWkUPBM=
+github.com/nosixtools/timewheel v1.3.0/go.mod h1:omeRLxcVYO2vn+G6uBCkwG9TjvKXmtx+7Rt5CkMS+N4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/rfyiamcool/go-timewheel v0.0.0-20200324075102-ab8baa57db6c h1:5S7w0cVWDCOFJwNIGRBdZKOm1ss0NtiCP3MUC6PzZ8U=
+github.com/rfyiamcool/go-timewheel v0.0.0-20200324075102-ab8baa57db6c/go.mod h1:uIh0ECxIzHJXVTUvgjHVdUBGJMw9pQf/ZT9/P8mYygY=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=

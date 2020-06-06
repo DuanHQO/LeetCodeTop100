@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace LeetCodeTop100CSharp.剑指Offer2 {
     class _0035_复杂链表的复制 {
-        public Node CopyRandomList(Node head) {
+        public ListNode CopyRandomList(ListNode head) {
             if (head == null)
                 return null;
 
-            var map = new Dictionary<Node, Node>();
+            var map = new Dictionary<ListNode, ListNode>();
 
             var node = head;
             while (node != null) {
                 if (!map.ContainsKey(node)) {
-                    var tmp = new Node();
+                    var tmp = new ListNode();
                     tmp.val = node.val;
                     map.Add(node, tmp);
                 }
 
                 if (node.next != null) {
                     if (!map.ContainsKey(node.next)) {
-                        var tmp = new Node();
+                        var tmp = new ListNode();
                         tmp.val = node.next.val;
                         map.Add(node.next, tmp);
                     }
@@ -31,7 +31,7 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
 
                 if (node.random != null) {
                     if (!map.ContainsKey(node.random)) {
-                        var tmp = new Node();
+                        var tmp = new ListNode();
                         tmp.val = node.random.val;
                         map.Add(node.random, tmp);
                     }

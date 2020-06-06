@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace LeetCodeTop100CSharp.剑指Offer2 {
     class _0036_二叉搜索树与双向链表 {
-        public Node TreeToDoublyList(Node root) {
+        public ListNode TreeToDoublyList(ListNode root) {
             if (root == null)
                 return null;
 
-            var stack = new Stack<Node>();
+            var stack = new Stack<ListNode>();
             var node = root;
-            Node pre = null;
+            ListNode pre = null;
 
             while (node != null || stack.Count > 0) {
                 while (node != null) {
