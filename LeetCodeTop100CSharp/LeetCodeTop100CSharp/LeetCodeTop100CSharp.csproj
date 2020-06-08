@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kit\BST.cs" />
     <Compile Include="Kit\ListNode.cs" />
     <Compile Include="Kit\RedBlackBST.cs" />
     <Compile Include="Kit\TreeNode.cs" />
