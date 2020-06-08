@@ -13,13 +13,13 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
             var map = new Dictionary<ListNode, ListNode>();
             ListNode pre = new ListNode(-1);
             ListNode back = new ListNode(-1);
-            pre.next = headA;
+            pre.Next = headA;
             while (headA != null) {
                 if (!map.ContainsKey(headA)) {
                     map.Add(headA, pre);
                 }
                 pre = headA;
-                headA = headA.next;
+                headA = headA.Next;
             }
             while (headB != null) {
                 if (!map.ContainsKey(headB)) {
@@ -30,7 +30,7 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
                     }
                 }
                 back = headB;
-                headB = headB.next;
+                headB = headB.Next;
             }
             return null;
         }

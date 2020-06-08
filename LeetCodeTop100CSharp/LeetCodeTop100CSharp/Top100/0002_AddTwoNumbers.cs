@@ -12,43 +12,43 @@ namespace LeetCodeTop100CSharp {
             var current = head;
 
             while (l1 != null && l2 != null) {
-                var add = l1.val + l2.val;
+                var add = l1.Val + l2.Val;
                 var node = new ListNode(add);
-                current.next = node;
+                current.Next = node;
                 current = node;
-                l1 = l1.next;
-                l2 = l2.next;
+                l1 = l1.Next;
+                l2 = l2.Next;
             }
 
             while (l1 == null && l2 != null) {
-                var node = new ListNode(l2.val);
-                current.next = node;
+                var node = new ListNode(l2.Val);
+                current.Next = node;
                 current = node;
-                l2 = l2.next;
+                l2 = l2.Next;
             }
 
             while (l2 == null && l1 != null) {
-                var node = new ListNode(l2.val);
-                current.next = node;
+                var node = new ListNode(l2.Val);
+                current.Next = node;
                 current = node;
-                l1 = l1.next;
+                l1 = l1.Next;
             }
 
-            current = head.next;
+            current = head.Next;
 
             while (current != null) {
-                if(current.val >= 10) {
-                    if(current.next != null) {
-                        current.next.val += 1;
+                if(current.Val >= 10) {
+                    if(current.Next != null) {
+                        current.Next.Val += 1;
                     } else {
-                        current.next = new ListNode(1);
+                        current.Next = new ListNode(1);
                     }
                 }
-                current.val = current.val % 10;
-                current = current.next;
+                current.Val = current.Val % 10;
+                current = current.Next;
             }
 
-            return head.next;
+            return head.Next;
         }
     }
 

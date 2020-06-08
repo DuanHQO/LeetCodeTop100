@@ -19,13 +19,13 @@ namespace LeetCodeTop100CSharp {
                     var node = queue.Dequeue();
                     if (len > 1) {
                         var next = queue.Peek();
-                        node.next = next;
+                        node.Next = next;
                     }
-                    if (node.left != null) {
-                        queue.Enqueue(node.left);
+                    if (node.Left != null) {
+                        queue.Enqueue(node.Left);
                     }
-                    if (node.right != null) {
-                        queue.Enqueue(node.right);
+                    if (node.Right != null) {
+                        queue.Enqueue(node.Right);
                     }
                     len--;
                 }

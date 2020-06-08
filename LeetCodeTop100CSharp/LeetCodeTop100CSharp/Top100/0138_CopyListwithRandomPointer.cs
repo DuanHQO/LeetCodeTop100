@@ -12,19 +12,19 @@ namespace LeetCodeTop100CSharp {
             var node = head;
             while (node != null) {
                 if (!map.ContainsKey(node)) {
-                    map.Add(node, new ListNode(node.val));
+                    map.Add(node, new ListNode(node.Val));
                 }
-                if (node.next != null) { 
-                    if (!map.ContainsKey(node.next)) 
-                        map.Add(node.next, new ListNode(node.next.val));
-                    map[node].next = map[node.next];
+                if (node.Next != null) { 
+                    if (!map.ContainsKey(node.Next)) 
+                        map.Add(node.Next, new ListNode(node.Next.Val));
+                    map[node].Next = map[node.Next];
                 }
-                if (node.random != null ) {
-                    if (!map.ContainsKey(node.random)) 
-                        map.Add(node.random, new ListNode(node.random.val));
-                    map[node].random = map[node.random];
+                if (node.Random != null ) {
+                    if (!map.ContainsKey(node.Random)) 
+                        map.Add(node.Random, new ListNode(node.Random.Val));
+                    map[node].Random = map[node.Random];
                 }
-                node = node.next;
+                node = node.Next;
             }
 
             return map[head];

@@ -12,8 +12,8 @@ namespace LeetCodeTop100CSharp {
             ListNode pre = null;
             ListNode next = null;
             while (head!= null) {
-                next = head.next;
-                head.next = pre;
+                next = head.Next;
+                head.Next = pre;
                 pre = head;
                 head = next;
             }

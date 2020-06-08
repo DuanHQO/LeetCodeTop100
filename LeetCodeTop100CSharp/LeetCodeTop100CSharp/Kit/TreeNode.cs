@@ -12,13 +12,13 @@ namespace LeetCodeTop100CSharp {
         public bool color;
 
         public TreeNode(TKey key, TValue value, int N, bool color) {
-            this.Key = key;
-            this.Value = value;
+            Key = key;
+            Value = value;
             this.N = N;
             this.color = color;
         }
 
-        public bool isRed(TreeNode<TKey, TValue> x) {
+        public bool IsRed(TreeNode<TKey, TValue> x) {
             if (x == null) return false;
             return x.color == true;
         }

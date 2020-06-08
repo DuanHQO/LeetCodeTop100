@@ -17,17 +17,17 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
             while (node != null || stack.Count > 0) {
                 while (node != null) {
                     stack.Push(node);
-                    node = node.left;
+                    node = node.Left;
                 }
                 node = stack.Pop();
                 if (pre != null) {
-                    node.left = pre;
-                    pre.right = node;
+                    node.Left = pre;
+                    pre.Right = node;
                 }
                 pre = node;
-                node = node.right;
+                node = node.Right;
             }
-            pre.right = root;
+            pre.Right = root;
             return root;
         }
     }

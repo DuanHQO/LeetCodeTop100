@@ -16,28 +16,28 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
             while (node != null) {
                 if (!map.ContainsKey(node)) {
                     var tmp = new ListNode();
-                    tmp.val = node.val;
+                    tmp.Val = node.Val;
                     map.Add(node, tmp);
                 }
 
-                if (node.next != null) {
-                    if (!map.ContainsKey(node.next)) {
+                if (node.Next != null) {
+                    if (!map.ContainsKey(node.Next)) {
                         var tmp = new ListNode();
-                        tmp.val = node.next.val;
-                        map.Add(node.next, tmp);
+                        tmp.Val = node.Next.Val;
+                        map.Add(node.Next, tmp);
                     }
-                    map[node].next = map[node.next];
+                    map[node].Next = map[node.Next];
                 }
 
-                if (node.random != null) {
-                    if (!map.ContainsKey(node.random)) {
+                if (node.Random != null) {
+                    if (!map.ContainsKey(node.Random)) {
                         var tmp = new ListNode();
-                        tmp.val = node.random.val;
-                        map.Add(node.random, tmp);
+                        tmp.Val = node.Random.Val;
+                        map.Add(node.Random, tmp);
                     }
-                    map[node].random = map[node.random];
+                    map[node].Random = map[node.Random];
                 }
-                node = node.next;
+                node = node.Next;
             }
 
             return map[head];

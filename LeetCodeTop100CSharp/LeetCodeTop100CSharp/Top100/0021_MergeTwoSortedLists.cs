@@ -10,22 +10,22 @@
             ListNode cur = new ListNode(-1);
             ListNode pre = cur;
             while (l1 != null && l2 != null) {
-                if(l1.val < l2.val) {
-                    cur.next = l1;
-                    l1 = l1.next;
+                if(l1.Val < l2.Val) {
+                    cur.Next = l1;
+                    l1 = l1.Next;
                 } else {
-                    cur.next = l2;
-                    l2 = l2.next;
+                    cur.Next = l2;
+                    l2 = l2.Next;
                 }
-                cur = cur.next;
+                cur = cur.Next;
             }
 
             if(l1 == null) {
-                cur.next = l2;
+                cur.Next = l2;
             } else {
-                cur.next = l1;
+                cur.Next = l1;
             }
-            return pre.next;
+            return pre.Next;
         }
     }
 }

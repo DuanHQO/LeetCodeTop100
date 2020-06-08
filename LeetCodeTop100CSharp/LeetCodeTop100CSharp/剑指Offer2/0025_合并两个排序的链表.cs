@@ -10,22 +10,22 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
             var head = new ListNode(-1);
             var pre = head;
             while (l1 != null && l2 != null) {
-                if (l1.val < l2.val) {
-                    head.next = l1;
-                    l1 = l1.next;
+                if (l1.Val < l2.Val) {
+                    head.Next = l1;
+                    l1 = l1.Next;
                 } else {
-                    head.next = l2;
-                    l2 = l2.next;
+                    head.Next = l2;
+                    l2 = l2.Next;
                 }
-                head = head.next;
+                head = head.Next;
             }
 
             if (l1 == null)
-                head.next = l2;
+                head.Next = l2;
             else
-                head.next = l1;
+                head.Next = l1;
 
-            return pre.next;
+            return pre.Next;
         }
     }
 }

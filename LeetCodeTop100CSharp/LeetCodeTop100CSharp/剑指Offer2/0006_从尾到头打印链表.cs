@@ -14,15 +14,15 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
             var back = head;
             ListNode pre = null;
             while (back != null) {
-                var next = back.next;
-                back.next = pre;
+                var next = back.Next;
+                back.Next = pre;
                 pre = back;
                 back = next;
             }
 
             while (pre != null) {
-                res.Add(pre.val);
-                pre = pre.next;
+                res.Add(pre.Val);
+                pre = pre.Next;
             }
 
             return res.ToArray();

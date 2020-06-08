@@ -13,8 +13,8 @@ namespace LeetCodeTop100CSharp.剑指Offer2 {
 
             ListNode pre = null;
             while (head != null) {
-                var next = head.next;
-                head.next = pre;
+                var next = head.Next;
+                head.Next = pre;
                 pre = head;
                 head = next;
             }
