@@ -115,7 +115,7 @@ namespace LeetCodeTop100CSharp {
         private TreeNode<TKey, TValue> Ceiling(TreeNode<TKey, TValue> x, TKey key) {
             if (x == null) return null;
             var cmp = key.CompareTo(x.Key);
-            if (cmp == 1) return x;
+            if (cmp == 0) return x;
             if (cmp > 0) return Ceiling(x.Right, key);
             var t = Ceiling(x.Left, key);
             return t ?? x;
