@@ -60,9 +60,12 @@ func mergeB(arr []int, lo, mid, hi int) {
 	}
 	temp = append(temp, arr[lo+m:mid+1]...)
 	temp = append(temp, arr[mid+1+n:hi+1]...)
-	left := arr[:lo]
-	right := arr[hi+1:]
-	arr = append(append(left, temp...), right...)
+	for i := 0; i+lo <= hi; i++ {
+		arr[lo+i] = temp[i]
+	}
+	//left := arr[:lo]
+	//right := arr[hi+1:]
+	//arr = append(append(left, temp...), right...)
 
 }
 
